@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f3e84892ad50204785e267a43ffd0d8",
+    "content-hash": "8b2775aa34bd6bc724ac71ed0915bc24",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -78,6 +78,53 @@
                 }
             ],
             "time": "2020-11-11T10:22:58+00:00"
+        },
+        {
+            "name": "copadia/php-video-url-parser",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Copadia-team/php-video-url-parser.git",
+                "reference": "dc5bbefe56b9437073077204d1739e90235572cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Copadia-team/php-video-url-parser/zipball/dc5bbefe56b9437073077204d1739e90235572cd",
+                "reference": "dc5bbefe56b9437073077204d1739e90235572cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": ">= 1.0",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RicardoFiorani\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo Fiorani",
+                    "email": "ricardo.fiorani@gmail.com"
+                },
+                {
+                    "name": "Philippe Ferreira",
+                    "email": "philippe.ferreira@copadia.com"
+                }
+            ],
+            "description": "A Simple and efficient PHP Video URL Parser that gives you thumbnails and embed codes for various services as Youtube, Vimeo, DailyMotion and Facebook",
+            "support": {
+                "source": "https://github.com/Copadia-team/php-video-url-parser/tree/v1.0.3"
+            },
+            "time": "2019-09-12T13:51:59+00:00"
         },
         {
             "name": "doctrine/annotations",

@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+ 
+{% block title %}Best Youtube Video !
+{% endblock %}
+ 
+{% block body %}
+ 
+    <h2>Toutes les vidéos</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for youtube in youtubes %}
+            <div class="col">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <a href="{{ path('app_video', {'id': youtube.id }) }}"><img src="{{ youtube.url|youtube_thumbnail }}" class="card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ youtube.name }}</h5>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+ 
+    <div class="mb-5 mt-5" id="addvideo">
+        <h2>Ajouter une vidéo</h2>
+        {{ form(form) }}
+    </div>
+ 
+    {% endblock %}
