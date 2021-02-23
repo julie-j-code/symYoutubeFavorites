@@ -43,6 +43,8 @@ public function video(Youtube $youtube): Response
         'name' => $youtube->getName(),
         'url' => $youtube->getUrl(),
     ]);
+
+    
 }
 
 }
